@@ -422,10 +422,10 @@ ylabel("Absolute Angle Errors [degrees]")
 
 %-----Functions--------
 
-function [vn wn] = error_vel(wr, wl,alfa1,alfa2,alfa3,alfa4)
+function [vn wn] = error_vel(odom_v,odom_w,alfa1,alfa2,alfa3,alfa4)
 
-  v= wr;
-  w = wl;
+  v = odom_v;
+  w = odom_w;
   
 G1 = zeros(1,12);
 G2 = zeros(1,12);
